@@ -58,11 +58,11 @@ export default function FilterPanel({ filters, onFiltersChange }: FilterPanelPro
           <div>
             <Label className="text-base font-semibold mb-3 block">Max Calories</Label>
             <Slider
-              value={[localFilters.maxCalories || 1000]}
+              value={[localFilters.maxCalories || 2000]}
               onValueChange={([value]) =>
                 setLocalFilters((prev) => ({ ...prev, maxCalories: value }))
               }
-              max={1000}
+              max={2000}
               min={100}
               step={50}
               className="mb-2"
